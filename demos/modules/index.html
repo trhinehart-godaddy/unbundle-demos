@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Modules Demo</title>
+  <script src="../../common/scripts/measure.js"></script>
+</head>
+<body>
+<main>
+  <h1>Modules Demo</h1>
+  <div id="header"></div>
+  <div id="app"></div>
+  <article>
+    <label>Pros</label>
+    <ul>
+      <li>Deduplication</li>
+      <li>Multiple Versions</li>
+    </ul>
+    <label>Cons</label>
+    <ul>
+      <li>Waterfall</li>
+      <li>Dependencies Not Pinned</li>
+      <li>Dependencies Not Bundled</li>
+    </ul>
+  </article>
+</main>
+</body>
+<script type="module" src="./dist/header.js"></script>
+<script type="module" src="./dist/app.js"></script>
+</html>

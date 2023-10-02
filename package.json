@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "unbundle-demos",
+  "workspaces": [
+    "./demos/*"
+  ],
+  "scripts": {
+    "serve": "ws --hostname localhost --open",
+    "build": "lerna run build",
+    "start": "npm run start:https",
+    "start:http": "npm run serve -- -p 80",
+    "start:https": "npm run serve -- --http2 --key localhost-key.pem --cert localhost.pem -p 443"
+  },
+  "devDependencies": {
+    "lerna": "^7.3.0",
+    "local-web-server": "^5.3.0"
+  }
+}
